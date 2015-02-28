@@ -1,14 +1,10 @@
 package BowlingGame;
 
-import java.util.Scanner;								//import scanner for key input//
+import java.util.Scanner;	//import scanner for key input//
 
 public class Game extends gameprocess {
 	public static void main(String Bowling[]) {
-		
-		//////// create display window from Display class /////
-		//Display dw = new Display();
-		//dw.setVisible(true);
-		///////////////////////////////////////////////////////
+
 		for(int i=0; i<1; i++){
 		
 		Scanner namesetup = new Scanner(System.in);
@@ -22,8 +18,8 @@ public class Game extends gameprocess {
 		String p6Name;
 		
 		int aop;
-		int frame;
 		
+			
 		
 		gameprocess p1;
 		gameprocess p2;
@@ -44,15 +40,13 @@ public class Game extends gameprocess {
 		Playersetup ps = new Playersetup();				//define link to player setup class in man void//
 		System.out.println(" Amount of players chosen " + ps.getplayer()); // print amount of players chosen in player setup //
 		System.out.println("  ");
-		
-		gameprocess fn = new gameprocess();
-		frame = fn.getframeno();
-		
+	
 		aop = ps.getplayer();
 		
 		System.out.println("  ");
 		
 		if (aop == 1){
+			
 			System.out.println(" Enter Player1 Name ");
 			p1Name = namesetup.next();
 			System.out.println(" Welcome " + p1Name);
